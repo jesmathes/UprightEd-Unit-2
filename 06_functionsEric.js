@@ -130,6 +130,12 @@ newCoffeeMaker("soup");
         - console.log 'Hello, my name is <your name>'
         - call (or invoke) your function
 */
+function name (first, last) {
+  let Name = `${first} ${last}`;
+console.log('my name\'s ${Name}.);
+}
+
+
 
 function greeting(firstName, lastName) {
   let fullName = `${firstName} ${lastName}`;

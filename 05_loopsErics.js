@@ -34,7 +34,7 @@ let v = -10;
 
 for (let i = 0; v <= 20; i++) {
   v += 2;
-  // console.log(v);
+  console.log(v);
 }
 
 // console.log(v);
@@ -71,14 +71,15 @@ for (let i = 0; i < firstName.length; i++) {
 let sum = 0;
 
 for (let i = 1; i <= 50; i += 1) {
-  // console.log(i);
+  console.log(i);
   sum += i; // sum = sum + i
-  // console.log(sum);
+  console.log(sum);
 }
 
 console.log(sum);
 
 //! FOR IN
+// ENUMERABLES
 let student = {
   name: "Peter",
   awesome: true,
@@ -95,10 +96,10 @@ let first = "erIC";
 let capName;
 
 for (let i in first) {
-  // console.log(typeof i);
+  console.log(typeof i);
   if (i == 0) {
     capName = first[i].toUpperCase();
-    // console.log(capName)
+    console.log(capName);
   } else {
     capName += first[i].toLowerCase();
   }
@@ -112,6 +113,7 @@ console.log(capName);
 // }
 // doesn't work -- object properties are NOT 'iterable', they are enumerable.
 
+// FOR..OF  work with ITERABLES
 let cats = ["tabby", "british shorthair", "burmese", "maine coon", "rag doll"];
 
 for (cat of cats) {
@@ -142,7 +144,7 @@ let city = [
 let structure = city[0];
 let pos = 0;
 
-while (structure != "empty street") {
+while ((structure = !"empty street")) {
   console.log(`Spider-Man swings from the ${structure}!`);
   pos++;
   structure = city[pos];
